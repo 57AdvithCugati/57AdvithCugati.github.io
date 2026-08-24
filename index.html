@@ -679,10 +679,11 @@
       }
       ctx.fillStyle = "#7a3b28";
       ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
       ctx.font = `600 ${Math.max(16, rect.width * 0.055)}px Mulish, sans-serif`;
-      ctx.fillText("Scratch Me ❤️", rect.width / 2, rect.height / 2 + 6);
+      ctx.fillText("Scratch Me \u2665", rect.width / 2, rect.height / 2 - 6);
       ctx.font = `400 ${Math.max(10, rect.width * 0.028)}px Mulish, sans-serif`;
-      ctx.fillText("use your finger or mouse", rect.width / 2, rect.height / 2 + 30);
+      ctx.fillText("use your finger or mouse", rect.width / 2, rect.height / 2 + 22);
     }, []);
 
     useEffect(() => {
@@ -920,7 +921,7 @@
     { key: "devatha", title: "Devatha Karyam", subtitle: "Family Ceremony",
       when: "23 · Nov · 2026 · Monday · 9:00 AM onwards",
       where: "At Groom’s Residence, Kollegal",
-      img: "images/couple-haldi.png",
+      img: "images/couple-devathakarya.png",
       note: "A sacred family gathering to invoke divine blessings. Lunch to follow." },
     { key: "reception", title: "Reception", subtitle: "Nichaya Virundhu",
       when: "28 · Nov · 2026 · Saturday · 6:00 PM onwards",
